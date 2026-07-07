@@ -9,6 +9,11 @@
           "logical-name": "engine.scene.Scene",
           "source-path": "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/scene/Scene.cppm"
         }
+      ],
+      "requires": [
+        {
+          "logical-name": "engine.entity.Entity"
+        }
       ]
     }
   ],

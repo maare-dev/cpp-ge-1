@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/alexandr/Projects/CPP/cpp-ge-1/build",
+  "command": "/usr/bin/clang++ -I/home/alexandr/Projects/CPP/cpp-ge-1/src -std=c++20 @CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o.modmap -o CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o -c /home/alexandr/Projects/CPP/cpp-ge-1/src/main.cpp",
+  "file": "/home/alexandr/Projects/CPP/cpp-ge-1/src/main.cpp",
+  "output": "CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/alexandr/Projects/CPP/cpp-ge-1/build",
+  "command": "/usr/bin/clang++ -I/home/alexandr/Projects/CPP/cpp-ge-1/src -std=c++20 @CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o.modmap -o CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o -c /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/Component.cppm",
+  "file": "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/Component.cppm",
+  "output": "CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o"
+},
+{
+  "directory": "/home/alexandr/Projects/CPP/cpp-ge-1/build",
+  "command": "/usr/bin/clang++ -I/home/alexandr/Projects/CPP/cpp-ge-1/src -std=c++20 @CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o.modmap -o CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o -c /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/entity/Entity.cppm",
+  "file": "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/entity/Entity.cppm",
+  "output": "CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o"
+},
+{
+  "directory": "/home/alexandr/Projects/CPP/cpp-ge-1/build",
+  "command": "/usr/bin/clang++ -I/home/alexandr/Projects/CPP/cpp-ge-1/src -std=c++20 @CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o.modmap -o CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o -c /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/scene/Scene.cppm",
+  "file": "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/scene/Scene.cppm",
+  "output": "CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o"
+}
+]

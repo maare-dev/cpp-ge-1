@@ -3,6 +3,8 @@
 #include <SFML/Window/Window.hpp>
 #include "engine/define/info.hpp"
 
+import engine.scene.Scene;
+
 int main(){
     sf::RenderWindow window(sf::VideoMode({800, 600}), ENGINE_NAME);
 

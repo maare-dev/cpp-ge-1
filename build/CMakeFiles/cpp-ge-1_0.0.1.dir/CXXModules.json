@@ -35,5 +35,15 @@
 			"path" : "CMakeFiles/cpp-ge-1_0.0.1.dir/engine.scene.Scene.pcm"
 		}
 	},
-	"usages" : {}
+	"usages" : 
+	{
+		"engine.component.Component" : 
+		[
+			"engine.entity.Entity"
+		],
+		"engine.scene.Scene" : 
+		[
+			"engine.entity.Entity"
+		]
+	}
 }
