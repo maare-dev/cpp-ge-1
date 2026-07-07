@@ -1,0 +1,5 @@
+-x c++-module
+-fmodule-output=CMakeFiles/cpp-ge-1_0.0.1.dir/engine.pcm
+-fmodule-file=engine:interfaces=CMakeFiles/cpp-ge-1_0.0.1.dir/engine-interfaces.pcm
+-fmodule-file=engine:component=CMakeFiles/cpp-ge-1_0.0.1.dir/engine-component.pcm
+-fmodule-file=engine:entity=CMakeFiles/cpp-ge-1_0.0.1.dir/engine-entity.pcm

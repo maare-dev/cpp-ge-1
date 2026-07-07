@@ -6,33 +6,43 @@
 	"config" : "",
 	"cxx-modules" : 
 	{
-		"CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o" : 
+		"CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o" : 
 		{
 			"bmi-only" : false,
 			"destination" : null,
 			"name" : "CXX_MODULES",
 			"relative-directory" : "src/engine/component",
-			"source" : "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/Component.cppm",
+			"source" : "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/component.cppm",
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
 		},
-		"CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o" : 
+		"CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/engine",
+			"source" : "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/engine.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o" : 
 		{
 			"bmi-only" : false,
 			"destination" : null,
 			"name" : "CXX_MODULES",
 			"relative-directory" : "src/engine/entity",
-			"source" : "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/entity/Entity.cppm",
+			"source" : "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/entity/entuty.cppm",
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
 		},
-		"CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o" : 
+		"CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o" : 
 		{
 			"bmi-only" : false,
 			"destination" : null,
 			"name" : "CXX_MODULES",
-			"relative-directory" : "src/engine/scene",
-			"source" : "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/scene/Scene.cppm",
+			"relative-directory" : "src/engine/interfaces",
+			"source" : "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/interfaces/interfaces.cppm",
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
 		}

@@ -1,12 +1,12 @@
 #!/bin/bash
-export ONAME="cpp-ge-1_0.0.1"
+export PROJECT_NAME="cpp-ge-1_0.0.1"
 
 # Удаляем старый кэш, чтобы избежать конфликтов генераторов
 rm -r build
 
 # Конфигурируем и собираем.
 # Оператор && гарантирует: если cmake упадет, скрипт прервется
-CC=clang CXX=clang++ cmake -G Ninja -B build -DONAME="$ONAME" && cmake --build build
+CC=clang CXX=clang++ cmake -G Ninja -B build -DPROJECT_NAME="$PROJECT_NAME" && cmake --build build
 
 # Проверяем статус сборки (0 - успех, всё остальное - ошибка)
 if [ $? -ne 0 ]; then
@@ -20,7 +20,7 @@ read -r -p "run? (Y/n)" run
 case "$run" in
     ""|[Yy])
         clear
-        "./build/$ONAME"
+        "./build/$PROJECT_NAME"
         ;;
     *)
         echo "cancelled"

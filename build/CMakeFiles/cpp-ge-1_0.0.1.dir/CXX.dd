@@ -1,12 +1,15 @@
 ninja_dyndep_version = 1.0
-build CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o: dyndep | CMakeFiles/cpp-ge-1_0.0.1.dir/engine.scene.Scene.pcm
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o: dyndep
 
-build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o | CMakeFiles/cpp-ge-1_0.0.1.dir/engine.component.Component.pcm: dyndep | CMakeFiles/cpp-ge-1_0.0.1.dir/engine.entity.Entity.pcm
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o | CMakeFiles/cpp-ge-1_0.0.1.dir/engine-component.pcm: dyndep | CMakeFiles/cpp-ge-1_0.0.1.dir/engine-interfaces.pcm
   restat = 1
 
-build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o | CMakeFiles/cpp-ge-1_0.0.1.dir/engine.entity.Entity.pcm: dyndep
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o | CMakeFiles/cpp-ge-1_0.0.1.dir/engine.pcm: dyndep | CMakeFiles/cpp-ge-1_0.0.1.dir/engine-interfaces.pcm CMakeFiles/cpp-ge-1_0.0.1.dir/engine-component.pcm CMakeFiles/cpp-ge-1_0.0.1.dir/engine-entity.pcm
   restat = 1
 
-build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o | CMakeFiles/cpp-ge-1_0.0.1.dir/engine.scene.Scene.pcm: dyndep | CMakeFiles/cpp-ge-1_0.0.1.dir/engine.entity.Entity.pcm
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o | CMakeFiles/cpp-ge-1_0.0.1.dir/engine-entity.pcm: dyndep | CMakeFiles/cpp-ge-1_0.0.1.dir/engine-component.pcm
+  restat = 1
+
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o | CMakeFiles/cpp-ge-1_0.0.1.dir/engine-interfaces.pcm: dyndep
   restat = 1
 

@@ -1,0 +1,2 @@
+-x c++-module
+-fmodule-output=CMakeFiles/cpp-ge-1_0.0.1.dir/engine-interfaces.pcm

@@ -1,0 +1,27 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "engine",
+          "source-path": "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/engine.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "engine:interfaces"
+        },
+        {
+          "logical-name": "engine:component"
+        },
+        {
+          "logical-name": "engine:entity"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

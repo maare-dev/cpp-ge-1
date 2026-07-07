@@ -120,7 +120,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=UniversalCppProject
+CMAKE_PROJECT_NAME:STATIC=cpp-ge-1_0.0.1
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0.0
@@ -203,19 +203,19 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //No help, variable specified on the command line.
-ONAME:UNINITIALIZED=cpp-ge-1_0.0.1
+PROJECT_NAME:UNINITIALIZED=cpp-ge-1_0.0.1
 
 //The directory containing a CMake configuration file for SFML.
 SFML_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SFML
 
 //Value Computed by CMake
-UniversalCppProject_BINARY_DIR:STATIC=/home/alexandr/Projects/CPP/cpp-ge-1/build
+cpp-ge-1_0.0.1_BINARY_DIR:STATIC=/home/alexandr/Projects/CPP/cpp-ge-1/build
 
 //Value Computed by CMake
-UniversalCppProject_IS_TOP_LEVEL:STATIC=ON
+cpp-ge-1_0.0.1_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-UniversalCppProject_SOURCE_DIR:STATIC=/home/alexandr/Projects/CPP/cpp-ge-1
+cpp-ge-1_0.0.1_SOURCE_DIR:STATIC=/home/alexandr/Projects/CPP/cpp-ge-1
 
 
 ########################

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: UniversalCppProject
+# Project: cpp-ge-1_0.0.1
 # Configurations: 
 # =============================================================================
 
@@ -63,17 +63,17 @@ build CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o: CXX_COMPILER__cpp-ge-1_0.2e0
   TARGET_PDB = cpp-ge-1_0.0.1.pdb
   dyndep = CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd
 
-build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o.ddi: CXX_SCAN__cpp-ge-1_0.2e0.2e1_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/Component.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1
-  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o.ddi
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o.ddi: CXX_SCAN__cpp-ge-1_0.2e0.2e1_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/component.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1
+  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o.ddi
   FLAGS = -std=c++20
   INCLUDES = -I/home/alexandr/Projects/CPP/cpp-ge-1/src
-  OBJ_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o.ddi.i
+  OBJ_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o.ddi.i
 
-build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o: CXX_COMPILER__cpp-ge-1_0.2e0.2e1_scanned_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/Component.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1 CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o.modmap
-  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o.modmap
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o: CXX_COMPILER__cpp-ge-1_0.2e0.2e1_scanned_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/component.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1 CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o.modmap
+  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o.modmap
   FLAGS = -std=c++20
   INCLUDES = -I/home/alexandr/Projects/CPP/cpp-ge-1/src
   OBJECT_DIR = CMakeFiles/cpp-ge-1_0.0.1.dir
@@ -82,17 +82,36 @@ build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o: CXX_C
   TARGET_PDB = cpp-ge-1_0.0.1.pdb
   dyndep = CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd
 
-build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o.ddi: CXX_SCAN__cpp-ge-1_0.2e0.2e1_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/entity/Entity.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1
-  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o.ddi
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o.ddi: CXX_SCAN__cpp-ge-1_0.2e0.2e1_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/engine.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1
+  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o.ddi
   FLAGS = -std=c++20
   INCLUDES = -I/home/alexandr/Projects/CPP/cpp-ge-1/src
-  OBJ_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o.ddi.i
+  OBJ_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o.ddi.i
 
-build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o: CXX_COMPILER__cpp-ge-1_0.2e0.2e1_scanned_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/entity/Entity.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1 CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o.modmap
-  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o.modmap
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o: CXX_COMPILER__cpp-ge-1_0.2e0.2e1_scanned_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/engine.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1 CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o.modmap
+  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o.modmap
+  FLAGS = -std=c++20
+  INCLUDES = -I/home/alexandr/Projects/CPP/cpp-ge-1/src
+  OBJECT_DIR = CMakeFiles/cpp-ge-1_0.0.1.dir
+  OBJECT_FILE_DIR = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine
+  TARGET_COMPILE_PDB = CMakeFiles/cpp-ge-1_0.0.1.dir/
+  TARGET_PDB = cpp-ge-1_0.0.1.pdb
+  dyndep = CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd
+
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o.ddi: CXX_SCAN__cpp-ge-1_0.2e0.2e1_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/entity/entuty.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1
+  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o.ddi
+  FLAGS = -std=c++20
+  INCLUDES = -I/home/alexandr/Projects/CPP/cpp-ge-1/src
+  OBJ_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o.ddi.i
+
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o: CXX_COMPILER__cpp-ge-1_0.2e0.2e1_scanned_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/entity/entuty.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1 CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o.modmap
+  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o.modmap
   FLAGS = -std=c++20
   INCLUDES = -I/home/alexandr/Projects/CPP/cpp-ge-1/src
   OBJECT_DIR = CMakeFiles/cpp-ge-1_0.0.1.dir
@@ -101,26 +120,26 @@ build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o: CXX_COMPILE
   TARGET_PDB = cpp-ge-1_0.0.1.pdb
   dyndep = CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd
 
-build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o.ddi: CXX_SCAN__cpp-ge-1_0.2e0.2e1_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/scene/Scene.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1
-  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o.ddi
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o.ddi: CXX_SCAN__cpp-ge-1_0.2e0.2e1_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/interfaces/interfaces.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1
+  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o.ddi
   FLAGS = -std=c++20
   INCLUDES = -I/home/alexandr/Projects/CPP/cpp-ge-1/src
-  OBJ_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o.ddi.i
+  OBJ_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o.ddi.i
 
-build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o: CXX_COMPILER__cpp-ge-1_0.2e0.2e1_scanned_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/scene/Scene.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1 CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o.modmap
-  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o.modmap
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o: CXX_COMPILER__cpp-ge-1_0.2e0.2e1_scanned_ /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/interfaces/interfaces.cppm || cmake_object_order_depends_target_cpp-ge-1_0.0.1 CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o.modmap
+  DEP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o.modmap
   FLAGS = -std=c++20
   INCLUDES = -I/home/alexandr/Projects/CPP/cpp-ge-1/src
   OBJECT_DIR = CMakeFiles/cpp-ge-1_0.0.1.dir
-  OBJECT_FILE_DIR = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene
+  OBJECT_FILE_DIR = CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces
   TARGET_COMPILE_PDB = CMakeFiles/cpp-ge-1_0.0.1.dir/
   TARGET_PDB = cpp-ge-1_0.0.1.pdb
   dyndep = CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd
 
-build CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd | /home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/CXXModules.json CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o.modmap CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o.modmap CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o.modmap CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o.modmap: CXX_DYNDEP__cpp-ge-1_0.2e0.2e1_ CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o.ddi CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o.ddi CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o.ddi CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o.ddi
+build CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd | /home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/CXXModules.json CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o.modmap CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o.modmap CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o.modmap CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o.modmap CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o.modmap: CXX_DYNDEP__cpp-ge-1_0.2e0.2e1_ CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o.ddi CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o.ddi CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o.ddi CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o.ddi CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o.ddi
 
 
 # =============================================================================
@@ -130,7 +149,7 @@ build CMakeFiles/cpp-ge-1_0.0.1.dir/CXX.dd | /home/alexandr/Projects/CPP/cpp-ge-
 #############################################
 # Link the executable cpp-ge-1_0.0.1
 
-build cpp-ge-1_0.0.1: CXX_EXECUTABLE_LINKER__cpp-ge-1_0.2e0.2e1_ CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1
+build cpp-ge-1_0.0.1: CXX_EXECUTABLE_LINKER__cpp-ge-1_0.2e0.2e1_ CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/component.cppm.o CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/entuty.cppm.o CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/interfaces/interfaces.cppm.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1
   OBJECT_DIR = CMakeFiles/cpp-ge-1_0.0.1.dir
   POST_BUILD = :

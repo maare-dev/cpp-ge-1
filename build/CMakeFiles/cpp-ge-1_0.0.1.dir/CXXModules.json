@@ -1,49 +1,66 @@
 {
 	"modules" : 
 	{
-		"engine.component.Component" : 
+		"engine" : 
 		{
-			"bmi" : "/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/engine.component.Component.pcm",
+			"bmi" : "/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/engine.pcm",
 			"is-private" : false
 		},
-		"engine.entity.Entity" : 
+		"engine:component" : 
 		{
-			"bmi" : "/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/engine.entity.Entity.pcm",
+			"bmi" : "/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/engine-component.pcm",
 			"is-private" : false
 		},
-		"engine.scene.Scene" : 
+		"engine:entity" : 
 		{
-			"bmi" : "/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/engine.scene.Scene.pcm",
+			"bmi" : "/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/engine-entity.pcm",
+			"is-private" : false
+		},
+		"engine:interfaces" : 
+		{
+			"bmi" : "/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/engine-interfaces.pcm",
 			"is-private" : false
 		}
 	},
 	"references" : 
 	{
-		"engine.component.Component" : 
+		"engine" : 
 		{
 			"lookup-method" : "by-name",
-			"path" : "CMakeFiles/cpp-ge-1_0.0.1.dir/engine.component.Component.pcm"
+			"path" : "CMakeFiles/cpp-ge-1_0.0.1.dir/engine.pcm"
 		},
-		"engine.entity.Entity" : 
+		"engine:component" : 
 		{
 			"lookup-method" : "by-name",
-			"path" : "CMakeFiles/cpp-ge-1_0.0.1.dir/engine.entity.Entity.pcm"
+			"path" : "CMakeFiles/cpp-ge-1_0.0.1.dir/engine-component.pcm"
 		},
-		"engine.scene.Scene" : 
+		"engine:entity" : 
 		{
 			"lookup-method" : "by-name",
-			"path" : "CMakeFiles/cpp-ge-1_0.0.1.dir/engine.scene.Scene.pcm"
+			"path" : "CMakeFiles/cpp-ge-1_0.0.1.dir/engine-entity.pcm"
+		},
+		"engine:interfaces" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/cpp-ge-1_0.0.1.dir/engine-interfaces.pcm"
 		}
 	},
 	"usages" : 
 	{
-		"engine.component.Component" : 
+		"engine" : 
 		[
-			"engine.entity.Entity"
+			"engine:component",
+			"engine:entity",
+			"engine:interfaces"
 		],
-		"engine.scene.Scene" : 
+		"engine:component" : 
 		[
-			"engine.entity.Entity"
+			"engine:interfaces"
+		],
+		"engine:entity" : 
+		[
+			"engine:component",
+			"engine:interfaces"
 		]
 	}
 }

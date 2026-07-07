@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(UniversalCppProject VERSION 1.0.0 LANGUAGES CXX)
+project(${PROJECT_NAME} VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -18,14 +18,14 @@ file(GLOB_RECURSE ALL_MODULES CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cppm"
 )
 
-add_executable(${ONAME} ${ALL_SRCS})
+add_executable(${PROJECT_NAME} ${ALL_SRCS})
 
-target_sources(${ONAME}
+target_sources(${PROJECT_NAME}
     PUBLIC
     FILE_SET CXX_MODULES
     FILES ${ALL_MODULES}
 )
 
-target_link_libraries(${ONAME} PRIVATE sfml-graphics sfml-window sfml-system)
+target_link_libraries(${PROJECT_NAME} PRIVATE sfml-graphics sfml-window sfml-system)
 
-target_include_directories(${ONAME} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/src")
+target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/src")
