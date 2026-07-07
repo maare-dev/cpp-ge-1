@@ -16,9 +16,11 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/alexandr/Projects/CPP/cpp-ge-1/src/*.cppm")
 set(OLD_GLOB
   "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/component.cppm"
+  "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/transform.cppm"
   "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/engine.cppm"
   "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/entity/entuty.cppm"
   "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/interfaces/interfaces.cppm"
+  "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/scene/scene.cppm"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

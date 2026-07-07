@@ -3,7 +3,7 @@ export module engine:component;
 export import :interfaces;
 
 export namespace engine {
-    class Component : public Icomponent {
+    class Component : public IComponent {
     public:
         Component() = default;
         Component(const Component&) = delete;
@@ -13,63 +13,73 @@ export namespace engine {
         ~Component() override = default;
 
         [[nodiscard]] IEntity* entity() noexcept override {
-            return owner_;
+            return _owner;
         }
 
         [[nodiscard]] const IEntity* entity() const noexcept override {
-            return owner_;
+            return _owner;
         }
 
         [[nodiscard]] bool enabled() const noexcept override {
-            return enabled_;
+            return _enabled;
         }
 
         [[nodiscard]] bool started() const noexcept override {
-            return started_;
+            return _started;
         }
 
-        void set_enabled(bool value) override {
-            if (enabled_ == value) {
+        [[nodiscard]] bool destroyQueued() const noexcept {
+            return _destroy_queued;
+        }
+
+        void setEnabled(bool enabled) override {
+            if (_enabled == enabled) {
                 return;
             }
 
-            enabled_ = value;
-            if (enabled_) {
-                on_enable();
+            _enabled = enabled;
+            if (_enabled) {
+                onEnable();
                 return;
             }
 
-            on_disable();
+            onDisable();
         }
 
         void update(float) override {}
 
     protected:
-        [[nodiscard]] bool has_entity() const noexcept {
-            return owner_ != nullptr;
+        [[nodiscard]] bool hasEntity() const noexcept {
+            return _owner != nullptr;
         }
 
     private:
         friend class Entity;
 
-        void attach(IEntity& entity) noexcept {
-            owner_ = &entity;
+        void attach(IEntity& _entity) noexcept {
+            _owner = &_entity;
+            _destroy_queued = false;
             awake();
         }
 
         void detach() noexcept {
-            owner_ = nullptr;
+            _owner = nullptr;
         }
 
-        void begin_play() {
-            if (!started_) {
-                started_ = true;
+        void queueDestroy() noexcept {
+            _destroy_queued = true;
+        }
+
+        void beginPlay() {
+            if (!_started) {
+                _started = true;
                 start();
             }
         }
 
-        IEntity* owner_ = nullptr;
-        bool enabled_ = true;
-        bool started_ = false;
+        IEntity* _owner = nullptr;
+        bool _enabled = true;
+        bool _started = false;
+        bool _destroy_queued = false;
     };
 }

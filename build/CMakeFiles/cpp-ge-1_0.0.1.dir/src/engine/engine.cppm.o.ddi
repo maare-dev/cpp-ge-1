@@ -19,6 +19,12 @@
         },
         {
           "logical-name": "engine:entity"
+        },
+        {
+          "logical-name": "engine:scene"
+        },
+        {
+          "logical-name": "engine:transform"
         }
       ]
     }

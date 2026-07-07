@@ -1,0 +1,21 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/transform.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "engine:transform",
+          "source-path": "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/transform.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "engine:component"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

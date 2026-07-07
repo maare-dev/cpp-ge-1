@@ -8,23 +8,23 @@ export module engine:interfaces;
 export namespace engine {
     class IEntity;
 
-    class Icomponent {
+    class IComponent {
     public:
-        virtual ~Icomponent() = default;
+        virtual ~IComponent() = default;
 
         [[nodiscard]] virtual IEntity* entity() noexcept = 0;
         [[nodiscard]] virtual const IEntity* entity() const noexcept = 0;
         [[nodiscard]] virtual bool enabled() const noexcept = 0;
         [[nodiscard]] virtual bool started() const noexcept = 0;
 
-        virtual void set_enabled(bool value) = 0;
+        virtual void setEnabled(bool enabled) = 0;
 
         virtual void awake() {}
         virtual void start() {}
         virtual void update(float delta_time) = 0;
-        virtual void on_enable() {}
-        virtual void on_disable() {}
-        virtual void on_destroy() {}
+        virtual void onEnable() {}
+        virtual void onDisable() {}
+        virtual void onDestroy() {}
     };
 
     class IEntity {
@@ -34,7 +34,7 @@ export namespace engine {
         [[nodiscard]] virtual std::size_t id() const noexcept = 0;
         [[nodiscard]] virtual bool active() const noexcept = 0;
 
-        virtual void set_active(bool value) = 0;
+        virtual void setActive(bool active) = 0;
         virtual void update(float delta_time) = 0;
         virtual void destroy() = 0;
 

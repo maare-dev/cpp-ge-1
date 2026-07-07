@@ -16,6 +16,16 @@
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
 		},
+		"CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/transform.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/engine/component",
+			"source" : "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/component/transform.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
 		"CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/engine.cppm.o" : 
 		{
 			"bmi-only" : false,
@@ -43,6 +53,16 @@
 			"name" : "CXX_MODULES",
 			"relative-directory" : "src/engine/interfaces",
 			"source" : "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/interfaces/interfaces.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/scene.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/engine/scene",
+			"source" : "/home/alexandr/Projects/CPP/cpp-ge-1/src/engine/scene/scene.cppm",
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
 		}

@@ -12,9 +12,9 @@ export module engine:entity;
 import :component;
 
 export namespace engine {
-    class Entity final : public IEntity {
+    class Entity : public IEntity {
     public:
-        Entity() : id_(next_id_++) {}
+        Entity() : _id(_next_id++) {}
 
         Entity(const Entity&) = delete;
         Entity& operator=(const Entity&) = delete;
@@ -26,36 +26,40 @@ export namespace engine {
         }
 
         [[nodiscard]] std::size_t id() const noexcept override {
-            return id_;
+            return _id;
         }
 
         [[nodiscard]] bool active() const noexcept override {
-            return active_;
+            return _active;
         }
 
-        void set_active(bool value) override {
-            active_ = value;
+        [[nodiscard]] bool destroyQueued() const noexcept {
+            return _destroy_queued;
+        }
+
+        void setActive(bool active) override {
+            _active = active;
         }
 
         template <typename T, typename... Args>
-        T& add_component(Args&&... args) {
+        T& addComponent(Args&&... _args) {
             static_assert(std::is_base_of_v<Component, T>, "T must derive from engine::Component");
 
-            auto component = std::make_unique<T>(std::forward<Args>(args)...);
-            auto* raw = component.get();
+            auto _component = std::make_unique<T>(std::forward<Args>(_args)...);
+            auto* _raw = _component.get();
 
-            raw->attach(*this);
-            components_.push_back(std::move(component));
-            return *raw;
+            _raw->attach(*this);
+            _components.push_back(std::move(_component));
+            return *_raw;
         }
 
         template <typename T>
-        [[nodiscard]] T* get_component() noexcept {
+        [[nodiscard]] T* getComponent() noexcept {
             static_assert(std::is_base_of_v<Component, T>, "T must derive from engine::Component");
 
-            for (const auto& component : components_) {
-                if (auto* typed = dynamic_cast<T*>(component.get())) {
-                    return typed;
+            for (const auto& _component : _components) {
+                if (auto* _typed = dynamic_cast<T*>(_component.get())) {
+                    return _typed;
                 }
             }
 
@@ -63,12 +67,12 @@ export namespace engine {
         }
 
         template <typename T>
-        [[nodiscard]] const T* get_component() const noexcept {
+        [[nodiscard]] const T* getComponent() const noexcept {
             static_assert(std::is_base_of_v<Component, T>, "T must derive from engine::Component");
 
-            for (const auto& component : components_) {
-                if (auto* typed = dynamic_cast<const T*>(component.get())) {
-                    return typed;
+            for (const auto& _component : _components) {
+                if (auto* _typed = dynamic_cast<const T*>(_component.get())) {
+                    return _typed;
                 }
             }
 
@@ -76,62 +80,112 @@ export namespace engine {
         }
 
         template <typename T>
-        [[nodiscard]] bool has_component() const noexcept {
-            return get_component<T>() != nullptr;
+        [[nodiscard]] bool hasComponent() const noexcept {
+            return getComponent<T>() != nullptr;
         }
 
         template <typename T>
-        bool remove_component() {
+        bool removeComponent() {
             static_assert(std::is_base_of_v<Component, T>, "T must derive from engine::Component");
 
-            const auto it = std::find_if(components_.begin(), components_.end(), [](const auto& component) {
-                return dynamic_cast<T*>(component.get()) != nullptr;
+            const auto _iterator = std::find_if(_components.begin(), _components.end(), [](const auto& _component) {
+                return dynamic_cast<T*>(_component.get()) != nullptr;
             });
 
-            if (it == components_.end()) {
+            if (_iterator == _components.end()) {
                 return false;
             }
 
-            (*it)->on_destroy();
-            (*it)->detach();
-            components_.erase(it);
+            (*_iterator)->onDestroy();
+            (*_iterator)->detach();
+            _components.erase(_iterator);
             return true;
         }
 
+        template <typename T>
+        bool queueRemoveComponent() {
+            static_assert(std::is_base_of_v<Component, T>, "T must derive from engine::Component");
+
+            if (auto* _component = getComponent<T>()) {
+                return queueRemoveComponent(*_component);
+            }
+
+            return false;
+        }
+
+        bool queueRemoveComponent(Component& _component) noexcept {
+            if (_component.entity() != this || _component.destroyQueued()) {
+                return false;
+            }
+
+            _component.queueDestroy();
+            _components_to_destroy.push_back(&_component);
+            return true;
+        }
+
+        void queueDestroy() noexcept {
+            _destroy_queued = true;
+        }
+
         void update(float delta_time) override {
-            if (!active_) {
+            processComponentDestroyQueue();
+
+            if (!_active || _destroyed) {
                 return;
             }
 
-            for (const auto& component : components_) {
-                if (!component->enabled()) {
+            for (const auto& _component : _components) {
+                if (_component->destroyQueued() || !_component->enabled()) {
                     continue;
                 }
 
-                component->begin_play();
-                component->update(delta_time);
+                _component->beginPlay();
+                _component->update(delta_time);
             }
         }
 
         void destroy() override {
-            if (destroyed_) {
+            if (_destroyed) {
                 return;
             }
 
-            destroyed_ = true;
-            for (auto& component : components_) {
-                component->on_destroy();
-                component->detach();
+            _destroyed = true;
+            _destroy_queued = false;
+            for (auto& _component : _components) {
+                _component->onDestroy();
+                _component->detach();
             }
-            components_.clear();
+            _components.clear();
+            _components_to_destroy.clear();
         }
 
     private:
-        inline static std::size_t next_id_ = 1;
+        void processComponentDestroyQueue() {
+            if (_components_to_destroy.empty()) {
+                return;
+            }
 
-        std::size_t id_ = 0;
-        bool active_ = true;
-        bool destroyed_ = false;
-        std::vector<std::unique_ptr<Component>> components_;
+            for (auto* _component : _components_to_destroy) {
+                if (_component->entity() == this) {
+                    _component->onDestroy();
+                    _component->detach();
+                }
+            }
+
+            std::erase_if(_components, [](const auto& _component) {
+                return _component->destroyQueued();
+            });
+
+            _components_to_destroy.clear();
+        }
+
+        inline static std::size_t _next_id = 1;
+
+        std::size_t _id = 0;
+        bool _active = true;
+        bool _destroyed = false;
+        bool _destroy_queued = false;
+        std::vector<std::unique_ptr<Component>> _components;
+        std::vector<Component*> _components_to_destroy;
     };
 }

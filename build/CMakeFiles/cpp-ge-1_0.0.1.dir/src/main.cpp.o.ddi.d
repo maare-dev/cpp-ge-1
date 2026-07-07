@@ -291,4 +291,7 @@ CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o.ddi: \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
   /usr/include/SFML/Graphics/VertexBuffer.hpp \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc \
   /home/alexandr/Projects/CPP/cpp-ge-1/src/engine/define/info.hpp
