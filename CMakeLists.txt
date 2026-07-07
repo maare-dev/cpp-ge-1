@@ -1,25 +1,30 @@
 cmake_minimum_required(VERSION 3.28)
 project(UniversalCppProject VERSION 1.0.0 LANGUAGES CXX)
 
-# Требуем стандарт C++20 так как используются модули
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-
-# Включаем автоматическое сканирование зависимостей модулей для CMake
 set(CMAKE_CXX_SCAN_FOR_MODULES ON)
 
-# 1. Автоматический поиск всех исходных, заголовочных файлов и модулей
-# Флаг CONFIGURE_DEPENDS заставляет CMake автоматически перезапускаться при добавлении новых файлов
+find_package(SFML 2.6 REQUIRED COMPONENTS graphics window system)
+
 file(GLOB_RECURSE ALL_SRCS CONFIGURE_DEPENDS
-    "*.cpp"
-    "*.hpp"
-    "*.cppm"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.hpp"
 )
 
-# 2. Создание цели
-add_executable($ONAME ${ALL_SRCS})
+file(GLOB_RECURSE ALL_MODULES CONFIGURE_DEPENDS
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cppm"
+)
 
-# 3. Добавление путей для #include, чтобы можно было использовать #include "..." для заголовков из подпапок
-get_filename_component(ALL_SOURCE_DIRS "." ABSOLUTE)
-target_include_directories($ONAME PRIVATE ${ALL_SOURCE_DIRS})
+add_executable(${ONAME} ${ALL_SRCS})
+
+target_sources(${ONAME}
+    PUBLIC
+    FILE_SET CXX_MODULES
+    FILES ${ALL_MODULES}
+)
+
+target_link_libraries(${ONAME} PRIVATE sfml-graphics sfml-window sfml-system)
+
+target_include_directories(${ONAME} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/src")

@@ -1,0 +1,12 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/main.cpp.o: dyndep
+
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/component/Component.cppm.o | CMakeFiles/cpp-ge-1_0.0.1.dir/engine.component.Component.pcm: dyndep
+  restat = 1
+
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/entity/Entity.cppm.o | CMakeFiles/cpp-ge-1_0.0.1.dir/engine.entity.Entity.pcm: dyndep
+  restat = 1
+
+build CMakeFiles/cpp-ge-1_0.0.1.dir/src/engine/scene/Scene.cppm.o | CMakeFiles/cpp-ge-1_0.0.1.dir/engine.scene.Scene.pcm: dyndep
+  restat = 1
+

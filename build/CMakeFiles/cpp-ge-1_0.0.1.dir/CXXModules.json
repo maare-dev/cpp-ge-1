@@ -1,0 +1,39 @@
+{
+	"modules" : 
+	{
+		"engine.component.Component" : 
+		{
+			"bmi" : "/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/engine.component.Component.pcm",
+			"is-private" : false
+		},
+		"engine.entity.Entity" : 
+		{
+			"bmi" : "/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/engine.entity.Entity.pcm",
+			"is-private" : false
+		},
+		"engine.scene.Scene" : 
+		{
+			"bmi" : "/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir/engine.scene.Scene.pcm",
+			"is-private" : false
+		}
+	},
+	"references" : 
+	{
+		"engine.component.Component" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/cpp-ge-1_0.0.1.dir/engine.component.Component.pcm"
+		},
+		"engine.entity.Entity" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/cpp-ge-1_0.0.1.dir/engine.entity.Entity.pcm"
+		},
+		"engine.scene.Scene" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/cpp-ge-1_0.0.1.dir/engine.scene.Scene.pcm"
+		}
+	},
+	"usages" : {}
+}

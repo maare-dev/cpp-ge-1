@@ -1,0 +1,3 @@
+/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/cpp-ge-1_0.0.1.dir
+/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/edit_cache.dir
+/home/alexandr/Projects/CPP/cpp-ge-1/build/CMakeFiles/rebuild_cache.dir
